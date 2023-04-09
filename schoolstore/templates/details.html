@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form filling here</title>
+</head>
+<body>
+<h2 style="margin-left:450px;margin-top:100px;">Registration Form</h2>
+<form style="margin-left:450px;" action="register" method="post">
+    {% csrf_token %}
+    <input type="text" name="NAME" placeholder="Name"><br>
+    <input type="text" name="DOB" placeholder="Enter your DOB"><br>
+    <input type="text" name="AGE" placeholder="Enter your Age"><br>
+    <input type="email" name="GENDER" placeholder="Enter your Gender"><br>
+    <input type="password" name="PHONE NUMBER" placeholder="Enter your Phone Number"><br>
+    <input type="password" name="MAIL ID" placeholder="Confirm your Mail Id"><br>
+    <input type="text" name="ADDRESS" placeholder="Enter your Address"><br>
+    <input type="text" name="PASSWORD" placeholder="Enter Password"><br>
+    <input type="text" name="CONFIRM PASSWORD" placeholder="Enter confirm password"><br>
+    <input type="submit" >
+</form>
+
+
+</body>
+</html>
